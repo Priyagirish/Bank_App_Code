@@ -1,0 +1,22 @@
+﻿USE [BankApp]
+Go
+
+
+INSERT INTO Customer VALUES
+(123456, 'Priyadharshini', 'Coimbatore', 500000),
+(234567, 'Test User 1', 'Pollachi', 10000),
+(345678, 'Test User 2', 'Chennai', 70000),
+(456789, 'Test User 3', 'Banglore', 500)
+
+
+INSERT INTO CustomerTransaction VALUES 
+(GETDATE(), 1000, 123456, 234567),
+(GETDATE(), 500, 123456, 345678),
+(GETDATE(), 10, 123456, 456789),
+(GETDATE(), 100, 123456, 234567),
+(GETDATE(), 7000, 123456, 456789),
+(GETDATE(), 60, 123456, 345678),
+(GETDATE(), 70, 123456, 456789),
+(GETDATE(), 10, 123456, 234567),
+(GETDATE(), 200, 345678, 234567),
+(GETDATE(), 200, 234567, 345678)
